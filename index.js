@@ -10,7 +10,7 @@ const catRoute = require("./routes/categories");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8800;
 
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
