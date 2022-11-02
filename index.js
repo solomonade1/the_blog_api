@@ -48,7 +48,7 @@ app.use("/api/user", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", catRoute);
 
-app.listen(PORT, () => {
+app.listen(PORT || 8800, () => {
   connect();
   console.log(`app is listening on http://localhost:${PORT}...`);
 });
